@@ -425,6 +425,47 @@
                 <use href="./images/sprite.svg#icon-Vector-1"></use>
             </svg>
         </button>
+        <form class="modal-form">
+            <p class="modal-form-text">Залиште свої дані, ми вам передзвонимо</p>
+            <label class="modal-form-field">
+                <span class="modal-form-input-desc">Ім'я</span>
+                <span class="modal-form-input-wrapper">
+                    <input type="text" name="user-name" class="modal-form-input" required pattern="^[a-zA-Za-яА-Я]+" minlength="2">
+                    <svg class="modal-form-icon" width="12" height="12">
+                        <use href="./images/sprite.svg#icon-name-icon-final"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-desc">Телефон</span>
+               <span class="modal-form-input-wrapper">
+                    <input type="tel" name="user-phone" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        title="xxx-xxx-xx-xx">
+                    <svg class="modal-form-icon" width="13" height="13">
+                        <use href="./images/sprite.svg#icon-phone-icon"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-desc">Пошта</span>
+                <span class="modal-form-input-wrapper">
+                    <input type="mail" name="user-mail" class="modal-form-input" required>
+                    <svg class="modal-form-icon" width="15" height="12">
+                        <use href="./images/sprite.svg#icon-mail-icon"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-form-input-desc">Коментар</span>
+                <textarea 
+                name="user-message"   
+                class="modal-form-message" 
+                placeholder="Bведіть текст"></textarea>
+            </label>
+            <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+            <label for="user-policy" class="modal-form-check-desc"><span class="modal-form-decs-policy">Погоджуюся з розсилкою та приймаю&nbsp;</span>  <a class="modal-form-desc-policy-link" href="">Умови договору</a> </label>
+            <button type="submit" class="modal-form-submit">Відправити</button>
+        </form>
     </div>
 </div>
 
